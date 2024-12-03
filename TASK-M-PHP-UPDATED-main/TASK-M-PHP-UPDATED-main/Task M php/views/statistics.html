@@ -1,0 +1,65 @@
+<link href="./assets/css/style.css" rel="stylesheet">
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo mb-4">
+                <h3 class="text-white">Task Manager</h3>
+            </div>
+            <nav class="nav flex-column">
+                <a class="nav-link" href="maincontent.html">
+                    <i class="fas fa-home"></i> Dashboard
+                </a>
+                <a class="nav-link" href="tasks.html">
+                    <i class="fas fa-tasks"></i> Tasks
+                </a>
+                <a class="nav-link active" href="create-task.html">
+                    <i class="fas fa-plus"></i> New Task
+                </a>
+                <a class="nav-link" href="profile.html">
+                    <i class="fas fa-user"></i> Profile
+                </a>
+                <a class="nav-link" href="statistics.html">
+                    <i class="fas fa-statistics"></i> Statistics
+                </a>
+                <a class="nav-link" href="#" id="logoutBtn">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+            </nav>
+        </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5>Task Overview</h5>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span>Total Tasks</span>
+                        <span id="totalTasks">0</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span>Completion Rate</span>
+                        <span id="completionRate">0%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h5>Task Distribution</h5>
+                    <canvas id="priorityChart" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5>Monthly Trends</h5>
+                    <canvas id="trendChart" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

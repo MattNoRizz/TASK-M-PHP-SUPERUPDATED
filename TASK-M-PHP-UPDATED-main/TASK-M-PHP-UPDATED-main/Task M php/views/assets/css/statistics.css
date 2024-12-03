@@ -1,0 +1,23 @@
+.stats-container {
+    padding: 20px;
+}
+
+.stats-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.stats-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff6b00;
+}
+
+.chart-container {
+    height: 300px;
+    margin-bottom: 30px;
+}
+
